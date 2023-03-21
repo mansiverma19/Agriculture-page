@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>APP PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      video{
+        position:absolute;
+        right:0px;
+        bottom:0px;
+        z-index:-1;
+      }
+      @media (min-aspect-ratio:16/9){
+        video{
+          width:100%;
+          height:auto;
+        }
+      }
+      @media (max-aspect-ratio:16/9){
+        video{
+          width:100%;
+          height:auto;
+        }
+      }
+      .main-container{
+        display:grid;
+        grid-template-rows:100px 520px 300px 250px;
+        grid-template-columns:80% 20%;
+/*         background:grey; */
+      }
+      nav{
+        display:flex;
+        justify-content:center;
+        padding:15px;
+/*         background:rgb(0,0,0); */
+      }
+      .g-item1{
+        grid-column-start:1;
+        grid-column-end:3;
+      }
+      .g-item2{
+        padding:30px;
+      }
+      .g-item4{
+        grid-column-start:1;
+        grid-column-end:3;
+      }
+      .g-item5{
+        grid-column-start:1;
+        grid-column-end:3;
+      }
+      p{
+        align-content:center
+        word-wrap:cue;
+        color:papayawhip;
+        border:1px whitesmoke;
+      }
+      .box{
+        border:2px solid white;
+        margin:80px 180px;
+        padding:10px;
+        background:black;
+        opacity:0.8;
+      }
+      .box:hover {
+        opacity: 1.0;
+      }
+
+      .container{
+        display:flex;
+        justify-content:center;
+/*         background:rgb(0,0,0); */
+        flex-wrap: wrap;
+        align-content: space-between;
+        max-width:100%;
+        gap:7px;
+      }
+      .m{
+        text-shadow: 6px 4px 8px black;
+        color:black;
+        align-content:left;
+      }
+      .contain-item{
+        align-self:space-between;
+        background:black;
+        margin:10px 10px 10px 10px;
+        height:30px;
+        width:auto;
+        color:antiquewhite;
+      }
+      .m{
+        background:none;
+        flex-basis:800px;
+        align-content:left;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline  poster="static/Screenshot (80).png" class="video1">
+      <source src="static/2 (1).mp4" type="video/mp4">
+    </video>
+    <div class="main-container">
+      <nav class="g-item1 c">
+        <img src="static/logo.png" height=80px width=80px>
+        <div class="container">
+          <div class="m"><h1><b>AGRICULTURE</b></h1></div>
+          <div class="contain-item"><b>HOME</b></div>
+          <div class="contain-item"><b>CROPS</b></div>
+          <div class="contain-item">SEASONS</div>
+          <div class="contain-item">LOGIN</div>
+          <div class="contain-item">OTHER</div>
+        </div>
+      </nav>
+      <div class="g-item2 c">
+        <div class="box"><p>This website will provide the information 
+         regarding 
+         the Crop production, about different types of crops, how to 
+         grow them.Livestock management like feed management, breeding, 
+         and disease prevention.Sustainability: There is a growing 
+         focus on sustainable agriculture practices like soil health, 
+         water conservation, and reducing carbon emissions.New 
+         technology: Agriculture is constantly evolving, with new 
+         technologies and tools being developed to lp farmers improve  
+         their operations.Farming news can help farmers to stay 
+         informed about changes that could affect their businesses.</p> 
+        </div>
+      </div>
+      <div class="g-item3 c">
+        <h2>3rd</h2>
+        <p>
+          dscgewyugfuebhfdjencfjden cfjdebfuebfebdfcjubgedfugeb.
+        </p>
+      </div>
+      <div class="g-item4 c">
+        <h2>4th</h2>
+        <p>
+          dscgewyugfuebhfdjencfjden cfjdebfuebfebdfcjubgedfugeb.
+        </p>
+      </div>
+      <footer class="g-item5 c">
+        <p>footer</p>
+      </footer>
+    </div>
+  </body>
+</html>
